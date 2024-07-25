@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>one page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .home-page{
+            width: 100%;
+            height: auto;
+            display: flex;
+            
+           
+        
+        }
+        .nav-bar{
+            width: 99%;
+            height: 30px;
+            padding: 10px;
+            background-color: rgb(53, 56, 56);
+            display: inline;
+           
+            position: fixed;
+            z-index: 2;
+        
+
+        }
+        .nav-bar ul{
+            display: flex;
+            list-style: none;
+            padding: 0;
+        
+            justify-content: space-between;
+            position: relative;
+            top: 5px;
+        }
+        .nav-bar li a {
+    text-decoration: none;
+    color: #e8dcdc;
+    font-weight: bold;
+}
+
+
+        .home-container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            top: 20px;
+        }
+        .left-section{
+            width: 25%;
+            height: 970px;
+            padding: 10px;
+            border: 2px solid rgb(230, 147, 23);
+            background-color: rgb(231, 236, 240);
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            top: 40px;
+            
+
+        
+        }
+   .menu{
+    position: sticky;
+    top: 40px;
+    }
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 1rem 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu ul li a:hover {
+    color: #007BFF;
+}
+
+        .right-section{
+            width: 75%;
+            height: auto;
+            padding: 30px;
+            border: 2px solid rgb(65, 65, 144);
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 20px;
+            
+        }
+        section{
+            height: 180px;
+            position: relative;
+            top: 70px;
+            }       
+           .nav-bar ul li a{
+            padding: 10px;
+            transition: 0.3s ease all;
+            }
+            .nav-bar ul li a:hover{
+                background-color: rgb(42, 158, 42);
+ 
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="home-page">
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#js">JavaScript</a></li>
+                <li><a href="#java">Java</a></li>
+                <li><a href="#php">PHP</a></li>
+                <li><a href="#python">Python</a></li>
+            </ul>
+        </nav>
+
+        <div class="home-container">
+            <div class="left-section">
+                <nav class="menu">
+                    <h2>HTML Tutorial</h2>
+                    <ul>
+                        <li><a href="#html_home">HTML HOME</a></li>
+                        <li><a href="#html_intro">HTML Introduction</a></li>
+                        <li><a href="#html_editors">HTML Editors</a></li>
+                        <li><a href="#html_basic">HTML Basic</a></li>
+                        <li><a href="#html_elements">HTML Elements</a></li>
+                        <li><a href="#html_attributes">HTML Attributes</a></li>
+                        <li><a href="#html_headings">HTML Headings</a></li>
+                        <li><a href="#html_paragraphs">HTML Paragraphs</a></li>
+                        <li><a href="#html_styles">HTML Styles</a></li>
+                        <li><a href="#html_formatting">HTML Formatting</a></li>
+                        <li><a href="#html_quotations">HTML Quotations</a></li>
+                        <li><a href="#html_comments">HTML Comments</a></li>
+                        <li><a href="#html_colors">HTML Colors</a></li>
+                        <li><a href="#html_css">HTML CSS</a></li>
+                        <li><a href="#html_links">HTML Links</a></li>
+                        <li><a href="#html_images">HTML Images</a></li>
+                    </ul>
+                </nav>
+        
+            </div>
+            <div class="right-section">
+                <section id="html_home">
+                    <h2>HTML HOME</h2>
+                    <p>Welcome to the HTML home section.</p>
+                </section>
+                <section id="html_intro">
+                    <h2>HTML Introduction</h2>
+                    <p>HTML stands for HyperText Markup Language. It is used to create web pages and web applications.</p>
+                </section>
+                <section id="html_editors">
+                    <h2>HTML Editors</h2>
+                    <p>You can use various editors to write HTML code, such as Notepad++, Sublime Text, Visual Studio Code, etc.</p>
+                </section>
+                <section id="html_basic">
+                    <h2>HTML Basic</h2>
+                    <p>HTML documents are made up of HTML elements. These elements are the building blocks of web pages.</p>
+                </section>
+                <section id="html_elements">
+                    <h2>HTML Elements</h2>
+                    <p>HTML elements are represented by tags. Tags are used to mark up the start and end of an element.</p>
+                </section>
+                <section id="html_attributes">
+                    <h2>HTML Attributes</h2>
+                    <p>HTML attributes provide additional information about HTML elements. They are always included in the opening tag.</p>
+                </section>
+                <section id="html_headings">
+                    <h2>HTML Headings</h2>
+                    <p>HTML headings are titles or subtitles that you want to display on a webpage. They range from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</p>
+                </section>
+                <section id="html_paragraphs">
+                    <h2>HTML Paragraphs</h2>
+                    <p>HTML paragraphs are defined with the <code>&lt;p&gt;</code> tag.</p>
+                </section>
+                <section id="html_styles">
+                    <h2>HTML Styles</h2>
+                    <p>HTML styles are used to add styles to your HTML elements, such as color, font, size, and more.</p>
+                </section>
+                <section id="html_formatting">
+                    <h2>HTML Formatting</h2>
+                    <p>HTML formatting elements are used to change the appearance of the text.</p>
+                </section>
+                <section id="html_quotations">
+                    <h2>HTML Quotations</h2>
+                    <p>HTML quotations are defined with the <code>&lt;blockquote&gt;</code>, <code>&lt;q&gt;</code>, and <code>&lt;cite&gt;</code> tags.</p>
+                </section>
+                <section id="html_comments">
+                    <h2>HTML Comments</h2>
+                    <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+                </section>
+                <section id="html_colors">
+                    <h2>HTML Colors</h2>
+                    <p>HTML colors can be added to elements using the style attribute, CSS, or various color attributes.</p>
+                </section>
+                <section id="html_css">
+                    <h2>HTML CSS</h2>
+                    <p>HTML CSS refers to using CSS to style HTML documents. CSS stands for Cascading Style Sheets.</p>
+                </section>
+                <section id="html_links">
+                    <h2>HTML Links</h2>
+                    <p>HTML links are defined with the <code>&lt;a&gt;</code> tag. Links are used to navigate from one page to another.</p>
+                </section>
+                <section id="html_images">
+                    <h2>HTML Images</h2>
+                    <p>HTML images are defined with the <code>&lt;img&gt;</code> tag. Images are a crucial part of web content.</p>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

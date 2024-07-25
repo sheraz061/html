@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+</head>
+<style>
+    .position{
+        width: 700px;
+        height: 400px;
+        border: 3px solid blue;
+    }
+    .relative-box{
+        position: relative;
+        top: 40px;
+        right: 30px;
+        width: 90px;
+        height: 100px;
+        border: 3px solid red;
+    }
+
+    .fixed-box{
+        position: fixed;
+        top: 0px;
+        right:0px;
+        width: 80px;
+        height: 70px;
+        border: 3px solid rgb(62, 191, 111);
+    }
+    .main-box{
+        position: relative;
+        width: 600px;
+        height: 370px;
+        background-color: antiquewhite;
+        border: 3px solid rgb(210, 122, 122);
+    }
+    .absolute-box{
+        position: absolute;
+        top: 30px;
+        right: 70px;
+        width: 100px;
+        height: 90px;
+        background-color: rgb(157, 98, 25);
+        border: 3px solid lightgrey;
+    }
+    .sticky-box{
+        position: sticky;
+        top: 30px;
+        right: 70px;
+        width: 600px;
+        height: 90px;
+        background-color: rgb(157, 98, 25);
+        border: 3px solid lightgrey;
+    }
+    .box{
+        width: 600px;
+        height: 120px;
+        background-color: rgb(237, 199, 153);
+        border: 3px solid lightgrey;
+    }
+</style>
+<body>
+    <h2>position</h2>
+    <div class="position">
+        <div class="relative-box">
+            <h2>relevent box</h2> 
+        </div>
+    </div>
+
+    <h2>position</h2>
+    <div class="position">
+        fixed boxx
+        <div class="fixed-box">
+            <h2>fixed-box</h2> 
+        </div>
+    </div>
+
+    <h2>position</h2>
+    <div class="position">
+         boxx
+        <div class="main-box">
+            <h1>main box</h1>
+            <p> agr main box ki position relative hoge to chlid box ki absolute krne se absolute-box main ki liyaaz he top , left, right ,buttom jay ga,
+                agr nahi rakhty to wo broswer k liy se left, right , top , buttom jay ga  
+            </p>
+        <div class="absolute-box">
+            <h2>absolute-box</h2> 
+        </div>
+    </div>
+    </div>
+
+    <h2>position</h2>
+    <div class="position">
+         boxx
+        <div>
+            <h1>main box</h1>
+           
+        <div class="sticky-box">
+            <h2>sticky-box</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+        <div class="box">
+            <h2>box1</h2> 
+        </div>
+    </div>
+    </div>
+</body>
+</html>
