@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Gallery</title>
+    <style>
+    *{
+      box-sizing: border-box;
+    }
+
+        .main {
+            display: flex;
+    
+            gap: 10px;
+            width:90%;
+            margin: 20px;
+            
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+.column{
+    display: flex;
+    flex-direction: column;
+}
+        .gallery-item {
+            
+            border-radius: 5px;
+            overflow: hidden; /* Ensures the image doesn't overflow the container */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            object-fit: cover; /* Ensures the image covers the container without distorting */
+        }
+
+        .item-1 {
+            
+        }
+
+        .item-2 {
+           
+        }
+
+        .item-3 {
+            
+        }
+
+        .item-4 {
+           
+        }
+
+        .item-5-6 {
+            
+        }
+
+        .item-5 {
+           
+        }
+
+        .item-6 {
+           
+        }
+
+        .item-7 {
+           
+        }
+
+        .item-8 {
+            
+        }
+@media (max-width:600px) {
+    
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="column">
+        <div class="gallery-item item-1"><img src="images/1.jpg"></div>
+        <div class="gallery-item item-2"><img src="images/2.jpg"></div>
+        <div class="gallery-item item-3"><img src="images/3.jpg"></div>
+        <div class="gallery-item item-4"><img src="images/4.jpg"></div>
+        
+        <div class="gallery-item item-5"><img src="images/5.jpg"></div>
+        <div class="gallery-item item-6"><img src="images/6.jpg"></div>
+
+        <div class="gallery-item item-7"><img src="images/7.jpg"></div>
+        <div class="gallery-item item-8"><img src="images/8.jpg"></div>
+        </div>
+
+        <div class="column">
+            <div class="gallery-item item-1"><img src="images/1.jpg"></div>
+            <div class="gallery-item item-2"><img src="images/2.jpg"></div>
+            <div class="gallery-item item-3"><img src="images/3.jpg"></div>
+            <div class="gallery-item item-4"><img src="images/4.jpg"></div>
+            
+            <div class="gallery-item item-5"><img src="images/5.jpg"></div>
+            <div class="gallery-item item-6"><img src="images/6.jpg"></div>
+    
+            <div class="gallery-item item-7"><img src="images/7.jpg"></div>
+            <div class="gallery-item item-8"><img src="images/8.jpg"></div>
+            </div>
+
+            <div class="column">
+                <div class="gallery-item item-1"><img src="images/1.jpg"></div>
+                <div class="gallery-item item-2"><img src="images/2.jpg"></div>
+                <div class="gallery-item item-3"><img src="images/3.jpg"></div>
+                <div class="gallery-item item-4"><img src="images/4.jpg"></div>
+                
+                <div class="gallery-item item-5"><img src="images/5.jpg"></div>
+                <div class="gallery-item item-6"><img src="images/6.jpg"></div>
+        
+                <div class="gallery-item item-7"><img src="images/7.jpg"></div>
+                <div class="gallery-item item-8"><img src="images/8.jpg"></div>
+                </div>
+
+    </div>
+</body>
+</html>

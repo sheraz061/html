@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+      }
+      .left {
+        display: flex;
+        align-items: center;
+      }
+      .icon a img {
+        width: 70%;
+        padding: 16px 6px 16px 10px;
+        float: left;
+        height: 100%;
+        margin-top: 1px;
+        width: 137px;
+        outline-offset: -2px;
+      }
+      .nav-items {
+        display: flex;
+        list-style-type: none;
+        gap: 5px;
+      }
+      .nav-items li a {
+        text-decoration: none;
+        font-size: 13px;
+        color: #262626;
+        display: inline-block;
+        margin-top: 1px;
+        padding: 16px 8px 10px;
+        height: 48px;
+        outline-offset: -2px;
+      }
+      .right {
+        display: flex;
+        align-items: center;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 24px;
+      }
+      .navbar .dropdown {
+        padding: 16px 20px 16px 15px;
+      }
+      .navbar .font-a-icons {
+        padding: 0px 10px;
+      }
+
+      /* Slider styling start */
+      .bg-img img {
+        width: 100%;
+      
+      }
+      .img-slider,.img-slider-2 {
+        position: relative;
+  
+      }
+      .bg-img{
+
+      }
+      .slider-info {
+        position: absolute;
+        top: 0;
+       display: flex;
+        align-items: center;
+        margin: 0px 100px;
+        height: 100%;
+      }
+      .info-box{
+        width: 50%;
+      }
+      .heading {
+        font-size: 1.8125rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+      }
+      .description {
+        margin-bottom: 1.5rem !important;
+        font-size: 16px;
+      }
+      .slider-button {
+        background-color: #0067b8;
+        color: white;
+        font-weight: 500;
+        font-size: 16px;
+        margin: 8px 0px;
+        padding: 10px 12px;
+        border-radius: 6px;
+        border: none;
+      }
+      /*-- media quuery---- */
+      @media (max-width: 600px){
+     .slider-info{
+      position: relative;
+      width: 100%;
+      margin: 0px 0px;
+      padding-left:50px ;
+     }
+
+
+
+     
+     .info-box{
+      width: 70%;
+     }
+      }
+
+
+
+
+
+
+
+
+
+
+      /*---   card section----- */
+
+.card-section{
+
+      
+         
+            
+        
+          width: 100%;
+}
+.bussnis{
+  position: relative;
+  top: 60px;
+  left: 80px;
+}
+.card-box{
+  display: flex;
+align-items: center;
+justify-content: center;
+padding: 40px;
+margin: 40px;
+gap: 20px;
+}
+      .card{
+        
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            
+            box-sizing: border-box;
+            
+      }
+      .card img{
+        width: 100%;
+      }
+      .card-description{
+        padding: 15px;
+      }
+
+
+      
+      /*---- second slider ---*/
+      .img-slider-2{
+        margin: 50px 80px;
+        
+        
+      }
+      .bg-img{}
+      .slider-info-2 {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        display:flex;
+        align-items: center;
+        margin: 0px 90px;
+        justify-content:end;
+        height: 100%;
+      
+      }
+      @media (max-width: 600px){
+      .slider-info-2{
+      
+      position: relative;
+      width: 100%;
+      margin: 0px 0px;
+      padding-left:50px ;
+      top: 0px;
+     }
+     .slider-info-2{
+      position: relative;
+     }
+     .info-box{
+      width: 70%;
+     }
+    }
+
+
+
+
+
+
+
+
+    .follow{
+      width: 100%;
+      padding: 0px 80px;
+      display: flex;
+      gap: 20px;
+      font-size: 18px;
+      
+      
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .footer {
+            background-color: #e7e7e7;
+            color: #7e7e7e;
+            padding: 40px 20px;
+            width: 100%;
+            margin-top:70px ;
+        }
+
+        .footer-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        .footer-column h3 {
+            margin-top: 0;
+            font-size: 1.2em;
+            padding-bottom: 5px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-column ul li {
+            margin: 10px 0;
+        }
+
+        .footer-column ul li a {
+            color: #898989;
+            text-decoration: none;
+        }
+
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-bottom a {
+            color: #8d8d8d;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="left">
+        <div class="icon">
+          <a href="https://microsoftt.com">
+            <img
+              src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+              alt=""
+            />
+          </a>
+        </div>
+        <ul class="nav-items">
+          <li><a href="#" class="nav-item-link">Microsoft 365</a></li>
+          <li><a href="#" class="nav-item-link">Office</a></li>
+          <li><a href="#" class="nav-item-link">CoPilot</a></li>
+          <li><a href="#" class="nav-item-link">Window</a></li>
+          <li><a href="#" class="nav-item-link">Support</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="dropdown">Microsoft</div>
+        <div class="font-a-icons">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="font-a-icons">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="font-a-icons"><i class="fa-solid fa-user"></i></div>
+      </div>
+    </nav>
+    <div class="img-slider">
+      <div class="bg-img">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-MultiCanvas-Microsoft-Copilot-App-3screens:VP4-1399x600"
+        alt="" height="600px"
+        />
+      </div>
+      <div class="slider-info">
+        <div class="info-box" style="width:">
+          <h3 class="heading">Unlock your potential with Microsoft Copilot</h3>
+          <div class="description">
+            Get things done faster and unleash your creativity with the power of
+            AI anywhere you go.
+          </div>
+          <div class="">
+            <button class="slider-button">Download the Copilot app</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--    card section 1    -->
+    <div class="card-section">
+
+      <div class="card-box">
+
+      <div class="card">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&hei=213&fit=crop" alt="">
+        <div class="card-description">
+         <h1>designed for life today - and tomorrow</h1> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus distinctio necessitatibus sint harum recusandae quae. Saepe recusandae voluptatem illo deleniti facilis sed ex dolore labore, aliquid a provident sit.</p>
+         <button class="slider-button">Download the Copilot app</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&hei=213&fit=crop" alt="">
+        <div class="card-description">
+         <h1>designed for life today - and tomorrow</h1> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus distinctio necessitatibus sint harum recusandae quae. Saepe recusandae voluptatem illo deleniti facilis sed ex dolore labore, aliquid a provident sit.</p>
+         <button class="slider-button">Download the Copilot app</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&hei=213&fit=crop" alt="">
+        <div class="card-description">
+         <h1>designed for life today - and tomorrow</h1> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus distinctio necessitatibus sint harum recusandae quae. Saepe recusandae voluptatem illo deleniti facilis sed ex dolore labore, aliquid a provident sit.</p>
+         <button class="slider-button">Download the Copilot app</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&hei=213&fit=crop" alt="">
+        <div class="card-description">
+         <h1>designed for life today - and tomorrow</h1> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus distinctio necessitatibus sint harum recusandae quae. Saepe recusandae voluptatem illo deleniti facilis sed ex dolore labore, aliquid a provident sit.</p>
+         <button class="slider-button">Download the Copilot app</button>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+
+
+<!--    third section -->
+
+    <div class="img-slider-2">
+      <div class="bg-img">
+<img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-PC-SMB-OneNote:VP4-1260x600"        alt=""
+        />
+      </div>
+
+      <div class="slider-info-2">
+        <div class="info-box" style="width:">
+          <h3 class="heading" style="color: white;">Organise your life</h3>
+          <div class="description" style="color: white;">
+            Keep your ideas and notes organised with OneNote.
+          </div>
+          <div class="">
+            <button class="slider-button">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!--    card section 1    -->
+    <div class="card-section">
+<h1 class="bussnis">for bissnuss</h1>
+      <div class="card-box">
+      
+
+      <div class="card">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&hei=213&fit=crop" alt="">
+        <div class="card-description">
+         <h1>designed for life today - and tomorrow</h1> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus distinctio necessitatibus sint harum recusandae quae. Saepe recusandae voluptatem illo deleniti facilis sed ex dolore labore, aliquid a provident sit.</p>
+         <button class="slider-button">Download the Copilot app</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&hei=213&fit=crop" alt="">
+        <div class="card-description">
+         <h1>designed for life today - and tomorrow</h1> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus distinctio necessitatibus sint harum recusandae quae. Saepe recusandae voluptatem illo deleniti facilis sed ex dolore labore, aliquid a provident sit.</p>
+         <button class="slider-button">Download the Copilot app</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&hei=213&fit=crop" alt="">
+        <div class="card-description">
+         <h1>designed for life today - and tomorrow</h1> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus distinctio necessitatibus sint harum recusandae quae. Saepe recusandae voluptatem illo deleniti facilis sed ex dolore labore, aliquid a provident sit.</p>
+         <button class="slider-button">Download the Copilot app</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/gldn-CP-Windows11-GlobalLaunch?wid=380&hei=213&fit=crop" alt="">
+        <div class="card-description">
+         <h1>designed for life today - and tomorrow</h1> 
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia possimus distinctio necessitatibus sint harum recusandae quae. Saepe recusandae voluptatem illo deleniti facilis sed ex dolore labore, aliquid a provident sit.</p>
+         <button class="slider-button">Download the Copilot app</button>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+
+    <div class="follow">
+
+      <p>for follow</p><span>facbook X linkdein </span>
+
+    </div>
+
+
+
+    <footer class="footer">
+      <div class="footer-section">
+          <div class="footer-column">
+              <h3>Microsoft Store</h3>
+              <ul>
+                  <li><a href="#">Account profile</a></li>
+                  <li><a href="#">Download Center</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Order tracking</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Education</h3>
+              <ul>
+                  <li><a href="#">Microsoft in education</a></li>
+                  <li><a href="#">Devices for education</a></li>
+                  <li><a href="#">Microsoft Teams for Education</a></li>
+                  <li><a href="#">Microsoft 365 Education</a></li>
+                  <li><a href="#">Office Education</a></li>
+                  <li><a href="#">Educator training and development</a></li>
+                  <li><a href="#">Deals for students and parents</a></li>
+                  <li><a href="#">Azure for students</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Business</h3>
+              <ul>
+                  <li><a href="#">Microsoft Cloud</a></li>
+                  <li><a href="#">Microsoft Security</a></li>
+                  <li><a href="#">Azure</a></li>
+                  <li><a href="#">Dynamics 365</a></li>
+                  <li><a href="#">Microsoft 365</a></li>
+                  <li><a href="#">Microsoft Advertising</a></li>
+                  <li><a href="#">Copilot for Microsoft 365</a></li>
+                  <li><a href="#">Microsoft Teams</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Developer & IT</h3>
+              <ul>
+                  <li><a href="#">Developer Center</a></li>
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">Microsoft Learn</a></li>
+                  <li><a href="#">Microsoft Tech Community</a></li>
+                  <li><a href="#">Azure Marketplace</a></li>
+                  <li><a href="#">AppSource</a></li>
+                  <li><a href="#">Microsoft Power Platform</a></li>
+                  <li><a href="#">Visual Studio</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>Company</h3>
+              <ul>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">About Microsoft</a></li>
+                  <li><a href="#">Company news</a></li>
+                  <li><a href="#">Privacy at Microsoft</a></li>
+                  <li><a href="#">Investors</a></li>
+                  <li><a href="#">Sustainability</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Microsoft</p>
+          <p>
+              <a href="#">Privacy & Cookies</a> |
+              <a href="#">Terms of Use</a> |
+              <a href="#">Trademarks</a> |
+              <a href="#">Safety & Eco</a> |
+              <a href="#">About our ads</a>
+          </p>
+      </div>
+  </footer>
+
+  </body>
+</html>
